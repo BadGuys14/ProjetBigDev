@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon du Jour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">← Retour au tableau de bord</a>
+        <h2 id="day-title">Chargement de la leçon...</h2>
+    </nav>
+
+    <div class="workspace">
+        <!-- Colonne Gauche : Explications -->
+        <div class="pane course-pane">
+            <h2>📖 Cours & Explications</h2>
+            <div id="course-content">
+                <p>Chargement du cours...</p>
+            </div>
+        </div>
+
+        <!-- Colonne Droite : Éditeur & Console -->
+        <div class="pane code-pane">
+            <h2>💻 Éditeur de Code & Console</h2>
+            <textarea id="code-editor" placeholder="// Écrivez votre code JavaScript ou HTML ici..."></textarea>
+            
+            <div class="btn-group">
+                <button onclick="runCode()" class="btn-run">▶ Exécuter le code</button>
+                <button onclick="validateCurrentDay()" class="btn-validate">✅ Valider la leçon d'aujourd'hui</button>
+            </div>
+
+            <h3>Console / Résultat :</h3>
+            <div id="console-output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
