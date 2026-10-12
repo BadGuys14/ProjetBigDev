@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jour</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p><b>ProjetBigDev</b> · <a href="index.html">← Tableau de bord</a> · <a id="prev" href="#">Jour précédent</a> · <a id="next" href="#">Jour suivant</a></p>
+  <h1 id="title"></h1>
+  <p id="msg"></p>
+</header>
+<main id="app">
+  <section><h2>📖 Cours</h2><div id="theory"></div></section>
+  <section><h2>🛠 Travaux pratiques</h2><div id="tasks"></div></section>
+  <textarea id="ed" spellcheck="false"></textarea>
+  <div class="row">
+    <button id="run">▶ Exécuter le code</button>
+    <button id="reset" style="background:var(--l)">Réinitialiser</button>
+    <small>Ctrl+Entrée pour exécuter</small>
+  </div>
+  <iframe id="fr" sandbox="allow-scripts"></iframe>
+  <h3>Console</h3>
+  <pre id="con"></pre>
+  <button id="ok">✅ Valider la leçon du jour</button>
+</main>
+<footer style="text-align:center;color:var(--m);padding:24px 16px;font-size:14px">ProjetBigDev · Créé par Emmanuel BILOMBO-SILAHO, développeur congolais</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
